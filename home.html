@@ -24,11 +24,19 @@
     <h4>Where are the cookies?</h4>
   </head>
   <body>
-    <div id="map"></div>
     <div id="info">
-      <h5>I found cookies!</h5>
-      <button onclick=addCookies()> Add cookies</button>
+              <button><a href="sellingcookies.html">Link</a>I'm Selling Cookies!</button>
+              <button> <a href="foundcooikies.html">Link</a>I Found Cookies!</button>
+              <button onclick=reportCookies()>Apply Filter</button>
+              <form>
+                    <input type="checkbox" name="cash" value="Cash">Cash<br>
+                    <input type="checkbox" name="credit" value="Credit Card">Credit Card<br>
+                    <input type="checkbox" name="venmo" value="Venmo">Venmo
+              </form>
     </div>
+    <div id="map"></div>
+    <div id="nearMe"></div>
+
     <script>
         // Note: This example requires that you consent to location sharing when
         // prompted by your browser. If you see the error "The Geolocation service
